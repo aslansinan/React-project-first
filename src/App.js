@@ -1,10 +1,13 @@
 import './App.css';
 const name =  "Sinan";
 const surname =  "Aslan";
+const isLoggedIn = false;
 function App() {
   return (
     <>
-    <h1>{`Benim adım ${name}, soyadım ${surname}`} </h1>
+    <h1>{isLoggedIn 
+      ? `Benim adım ${name}, soyadım ${surname}`
+      : 'giriş yapmadınız'}</h1>
     </>
   );
 }
